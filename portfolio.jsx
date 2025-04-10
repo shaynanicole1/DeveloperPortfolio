@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 const sections = ["About Me", "Portfolio", "Contact", "Resume"];
 
 const projects = [
-  { title: "", image: "#", app: "https://app.com", repo: "https://github.com" },
+  { title: "Employee", image: "#", app: "https://app.com", repo: "https://github.com/shaynanicole1/EmployeeTracker-" },
   { title: "Weather App", image: "#", app: "https://app.com", repo: "https://github.com" },
   { title: "Task Manager", image: "#", app: "https://app.com", repo: "https://github.com" },
   { title: "E-commerce", image: "#", app: "https://app.com", repo: "https://github.com" },
@@ -17,7 +17,9 @@ const projects = [
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("About Me");
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "Shayna Sammy", email: "Shaynasammy08@gmail.com", message: "Hi, I'm Shayna, a web developer passionate about building clean, responsive, and user-friendly websites and applications. I specialize in front-end and full-stack development, turning ideas into functional digital experiences. Take a look at my work!"
+
+   });
   const [formErrors, setFormErrors] = useState({});
 
   const handleNavClick = (section) => {
@@ -65,10 +67,9 @@ export default function Portfolio() {
       <main className="mt-6">
         {activeSection === "About Me" && (
           <section>
-            <img src="https://via.placeholder.com/150" alt="Developer" className="rounded-full mb-4" />
+            <img src="C:\Users\Al\Downloads\IMG_0802.jpeg" alt="Developer" className="rounded-full mb-4" />
             <p>
-              Hi, I’m John Doe, a passionate web developer specializing in building interactive and accessible web
-              applications with React and modern JavaScript.
+            I’m a web developer with a passion for building clean, scalable, and user-focused digital experiences. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks like React and Node.js, I enjoy crafting responsive front-end interfaces and building full-stack applications that are fast, accessible, and intuitive. Whether it’s designing sleek UIs, optimizing backend performance, or automating workflows, I love turning complex challenges into elegant solutions. I believe in writing clean, maintainable code and staying up to date with industry trends.
             </p>
           </section>
         )}
@@ -130,7 +131,7 @@ export default function Portfolio() {
         {activeSection === "Resume" && (
           <section>
             <a
-              href="/resume.pdf"
+              href="https://docs.google.com/document/d/0B86o6LW4v4nXSXdkalNSenZ0LUVDNDdsZ1Y4aDdZcUx1YjFR/edit?resourcekey=0-Evlb0knm5BvLb4_gXFvifg"
               className="text-blue-600 underline"
               download
               target="_blank"
@@ -152,9 +153,8 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="mt-12 border-t pt-4 flex justify-center space-x-4">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+        <a href="https://github.com/shaynanicole1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/shayna-sammy-5a133624b/">LinkedIn</a>
       </footer>
     </div>
   );
