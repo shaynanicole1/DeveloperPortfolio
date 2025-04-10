@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 const sections = ["About Me", "Portfolio", "Contact", "Resume"];
 
 const projects = [
-  { title: "Blog App", image: "#", app: "https://app.com", repo: "https://github.com" },
+  { title: "", image: "#", app: "https://app.com", repo: "https://github.com" },
   { title: "Weather App", image: "#", app: "https://app.com", repo: "https://github.com" },
   { title: "Task Manager", image: "#", app: "https://app.com", repo: "https://github.com" },
   { title: "E-commerce", image: "#", app: "https://app.com", repo: "https://github.com" },
